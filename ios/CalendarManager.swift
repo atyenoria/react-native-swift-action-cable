@@ -56,7 +56,8 @@ class CalendarManager: NSObject {
   }
   
   @objc func addEvent(name: String, location: String, date: NSNumber) -> Void {
-  
+  let roomChannel = client.create("RoomChannel")
+  roomChannel["speak"](["message": "Hello, World!"])
   }
   
   
